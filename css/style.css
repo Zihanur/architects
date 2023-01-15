@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-/*Nevigation menu style*/
+/*---------------Nevigation menu style--------------*/
 .nav{
   display: flex;
   justify-content: space-around;
@@ -54,7 +54,6 @@
   gap: 20px;
   text-align: center;
   padding-top: 110px;
-
 }
 .arc-group-title{
   font-weight: 700;
@@ -144,7 +143,6 @@
   background: #FF900E;
 }
 
-
 /*----------------More Features style-----------------*/
 .more-features{
   display: flex;
@@ -166,7 +164,7 @@
   display: flex;
   gap: 20px;
 }
-/*front of title orange bar*/
+/*============front of title orange bar=============*/
 .style-bar{
   height: 110px;
   width: 5px;
@@ -204,7 +202,7 @@
   color: #727272;
   font-size: 16px;
 }
-/*Experience btn*/
+/*============Experience btn=============*/
 .experience-btn{
   display: flex;
   justify-content: center;
@@ -258,6 +256,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: width 2s linear, height 2s linear;
+}
+/*============Transition style=============*/
+.fact:hover{
+  border: 2px solid #f43905;
+  background-color: #f8f8f8;
 }
 .fact img{
   width: 45.22px;
@@ -307,7 +311,7 @@
   opacity: 0.7;
 }
 
-/*Footer style*/
+/*------------------Footer style------------------*/
 .footer{
   display: flex;
   justify-content: center;
@@ -323,7 +327,7 @@
 }
 
 
-/*-----------------------Responsive for mobile---------------------*/
+/*-----------------------Responsive for Tab---------------------*/
 
 @media screen and (max-width:976px){
   .nav,.nav-bar ul{
