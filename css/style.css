@@ -12,6 +12,7 @@
 /*----------------Header Style-------------------*/
 .header{
   background: rgba(255, 144, 14, 0.1);
+  width: 100%;
 }
 
 /*Nevigation menu style*/
@@ -24,9 +25,10 @@
 .header-title{
   font-weight: 700;
   font-size: 45px;
+  text-align: center;
   color: #131313;
 }
-.nav ul{
+.nav-bar ul{
   display: flex;
   gap: 30px;
 }
@@ -47,10 +49,12 @@
   align-items: center;
 }
 .arc-group-info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   text-align: center;
-  width: 832px;
-  height: 220px;
   padding-top: 110px;
+
 }
 .arc-group-title{
   font-weight: 700;
@@ -58,13 +62,20 @@
   color: #131313;
 }
 .arc-group-description{
+  width: 70%;
+  margin: auto;
   font-weight: 400;
   font-size: 16px;
   color: #727272;
+  padding-bottom: 40px;
 }
-.group-info div img{
-  width: 1200px;
-  height: 550px;
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner img{
+  width: 85%;
+  margin: auto;
   padding-bottom: 30px;
 }
 .explore-btn label input{
@@ -85,7 +96,8 @@
   justify-content: center;
   align-items: center;
   gap: 65px;
-  margin: 70px 280px 130px;
+  padding: 50px 200px 100px;
+  margin: auto;
 }
 .features>div{
   flex: 1;
@@ -138,7 +150,6 @@
   display: flex;
   gap: 40px;
   margin: 33px 200px;
-  
 }
 .more-features>div{
   flex: 1;
@@ -267,6 +278,7 @@
 .our-sponsors{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 50px;
   margin: 0 200px 100px;
@@ -308,4 +320,139 @@
   color: #424242;
   padding: 30px 300px;
   margin-bottom: 150px;
+}
+
+
+/*-----------------------Responsive for mobile---------------------*/
+
+@media screen and (max-width:976px){
+  .nav,.nav-bar ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar{
+    margin-top: 40px;
+  }
+  .arc-group-info{
+    width: 90%;
+    height: auto;
+    padding-top: 70px;
+  }
+  .arc-group-title{
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .features{
+    flex-direction: column-reverse;
+    margin: auto;
+    padding: 50px 10px;
+  }
+  .features-photos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .features-info{
+    align-items: center;
+    text-align: center;
+  }
+  .features-title{
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .more-features{
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 10px;
+    text-align: center;
+  }
+  .title-style{
+    justify-content: center;
+  }
+  .style-bar{
+    height: 90px;
+    width: 5px;
+    background-color: #FF900E;
+  }
+  .more-features-title{
+    font-weight: 600;
+    font-size: 35px;
+    color: #131313;
+  }
+  .more-features-image{
+    padding: 10px;
+  }
+  .experience-btn button{
+    padding: 20px;
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 5px;
+  }
+  .experience-btn-lg-text{
+    font-weight: 500;
+    font-size: 45px;
+  }
+  .experience-btn-sm-text{
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  .some-facts{
+    margin: 50px 10px;
+  }
+  .some-facts-title{
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+  }
+  .some-facts-description{
+    font-size: 16px;
+    padding-top: 18px;
+    text-align: center;
+  }
+  .some-fact{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .sponsors-info{
+    text-align: center;
+    width: 90%;
+  }
+  .our-sponsors{
+    margin: 0 10px;
+    padding: 0;
+  }
+  .our-sponsors>div{
+    flex: 1;
+  }
+  .our-sponsors-title{
+    font-weight: 800;
+    font-size: 35px;
+  }
+  .our-sponsors-description{
+    margin-top: 10;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 0;
+  }
+  .sponsors-logo>img{
+    filter: brightness(0);
+    opacity: 0.7;
+  }
+  .sponsors-logos{
+    width: 90%;
+    margin-bottom: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sponsors-logo>img{
+    height: 50px;
+    width: 70px;
+  }
+  .footer-info{
+    font-size: 16px;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
 }
